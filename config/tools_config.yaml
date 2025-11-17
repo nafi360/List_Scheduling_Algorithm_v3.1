@@ -1,0 +1,24 @@
+trimmomatic: /opt/bio/trimmomatic/trimmomatic.jar
+spades: /opt/bio/SPAdes/bin/spades.py
+quast: /opt/bio/quast/quast.py
+
+trnascan_se: /opt/bio/tRNAscan-SE/tRNAscan-SE
+rrnammer: /opt/bio/RNAmmer/rnammer
+orffinder: /opt/bio/ORFfinder/orffinder
+prep_mt: /opt/bio/PREP-Mt/prep_mt
+
+misa: /opt/bio/MISA/misa.pl
+trf: /opt/bio/TRF/trf
+reputer: /opt/bio/REPuter/reputer
+
+blastn: /opt/bio/ncbi-blast+/bin/blastn
+circos: /opt/bio/circos/bin/circos
+
+mafft: /opt/bio/mafft/mafft
+trimal: /opt/bio/trimal/trimal
+raxml: /opt/bio/raxml/raxmlHPC-PTHREADS-SSE3
+
+scratch_root: /scratch
+results_root: /scratch/results
+rawdata_root: /scratch/raw
+ref_root: /scratch/ref

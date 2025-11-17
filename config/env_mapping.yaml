@@ -1,0 +1,22 @@
+environments:
+  E1:
+    description: 2 vCPU
+    slurm_partition: mito-queue
+    slurm_constraint: env2vcpu
+    num_cores: 2
+    instance_type: c5.large
+    price_per_hour: 0.026
+  E2:
+    description: 4 vCPU
+    slurm_partition: mito-queue
+    slurm_constraint: env4vcpu
+    num_cores: 4
+    instance_type: c5.xlarge
+    price_per_hour: 0.104
+  E3:
+    description: 8 vCPU
+    slurm_partition: mito-queue
+    slurm_constraint: env8vcpu
+    num_cores: 8
+    instance_type: c5.2xlarge
+    price_per_hour: 0.416

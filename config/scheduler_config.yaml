@@ -1,0 +1,15 @@
+# Parameter global untuk komputasi metrik
+power_active_watt: 50.0        # per core saat aktif
+power_idle_watt: 10.0          # per core saat idle
+
+# price_per_core_hour per environment (perkiraan)
+price_per_core_hour:
+  E1: 0.013     # misal 2 vCPU, 0.026 / instance-hour
+  E2: 0.026     # misal 4 vCPU, 0.104 / instance-hour
+  E3: 0.052     # misal 8 vCPU, 0.416 / instance-hour
+
+# failure rate (lambda_fail) per core per detik (nilai dummy)
+lambda_fail:
+  E1: 1.0e-7
+  E2: 1.0e-7
+  E3: 1.0e-7

@@ -1,0 +1,35 @@
+Region: ap-southeast-1
+
+Image:
+  Os: alinux2
+
+HeadNode:
+  InstanceType: t3.large
+  Networking:
+    SubnetId: subnet-0e7047276e9faadaa
+  Ssh:
+    KeyName: Kunci
+
+Scheduling:
+  Scheduler: slurm
+  SlurmQueues:
+    - Name: mito-queue
+      ComputeResources:
+        - Name: env2vcpu
+          Instances:
+            - InstanceType: c5.large      # 2 vCPU
+          MinCount: 0
+          MaxCount: 10
+        - Name: env4vcpu
+          Instances:
+            - InstanceType: c5.xlarge     # 4 vCPU
+          MinCount: 0
+          MaxCount: 10
+        - Name: env8vcpu
+          Instances:
+            - InstanceType: c5.2xlarge    # 8 vCPU
+          MinCount: 0
+          MaxCount: 10
+      Networking:
+        SubnetIds:
+          - subnet-08c3c0ef9a2c3be3e   
